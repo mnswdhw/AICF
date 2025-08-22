@@ -1,4 +1,4 @@
-# AI Changefeed (AICF) — v0.1 **Minimal Core** (Community Draft)
+# AI Changefeed (AICF) — v0.1 **Minimal Core** 
 
 **Status:** Draft <br>
 **Authors:** Manas Wadhwa (manaswadhwa41@gmail.com) <br>
