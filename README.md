@@ -32,3 +32,8 @@ Get Started
 
 Integration with MCP
 AICF feeds work great as data sources for Anthropic's Model Context Protocol (MCP) servers, enabling real-time context updates without full re-indexing.
+
+## License
+
+- **Specification text**: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) - See [spec/LICENSE](spec/LICENSE)
+- **Code & examples**: [Apache 2.0](https://opensource.org/licenses/Apache-2.0) - See [LICENSE](LICENSE)
