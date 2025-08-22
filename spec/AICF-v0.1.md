@@ -119,7 +119,7 @@ A compliant client SHOULD:
 * **Sitemaps** → "what exists"; **AICF** → "what changed." Use both.
 * **RSS/Atom** → human news; **AICF** → machine-granular updates (docs, pricing, policies).
 * **robots.txt / llms.txt** → access/usage policy; **AICF** → updates channel.
-* **MCP (Model Context Protocol)** → AICF feeds can serve as efficient data sources for MCP servers, enabling real-time context updates for AI assistants. An MCP server could consume AICF to maintain fresh knowledge without full re-crawling.
+* **MCP (Model Context Protocol)** → AICF feeds can serve as efficient data sources for MCP servers, enabling real-time context updates for AI assistants. 
 
 ## 8. JSON Schemas (Minimal)
 
@@ -209,27 +209,13 @@ onEvent(e):
 
 ## 11. What to Add Next (Optional Extensions)
 
-When you're ready to grow beyond the minimal core, consider adding these as separate, optional profiles:
-
 1. **Chunk Hints & Precomputed Vectors**
   * Fields like `chunk_id`, `embed_ref`, `section_checksum` for surgical updates and RAG efficiency.
 
-2. **Integrity**
-  * Batched detached signatures/manifests; public key discovery for tamper-evidence.
-
-3. **Push Delivery**
+2. **Push Delivery**
   * Webhook/SSE profiles for near-real-time updates with retry semantics.
 
-4. **Diff References**
-  * Links to JSON Patch / Merge Patch for machine-applyable deltas.
-
-5. **Auth & Private Feeds**
-  * OAuth/Token-based access for partner or internal feeds.
-
-6. **Sharding & Range Queries**
-  * Feed-of-feeds indexes and `from_id/limit` pagination for scale.
-
-7. **Billing Hints**
+3. **Billing Hints**
   * Neutral metering metadata (`plan|unit|size|nonce`) for usage reconciliation.
 
 Each extension should be **opt-in** and discoverable (e.g., by a future `capabilities` array), keeping the core spec small and easy to adopt.
