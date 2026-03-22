@@ -1,5 +1,7 @@
 # AI Changefeed (AICF)
 
+The idea is to make web consumption easier for agents or LLMs. Web consumption in future is for agents so API only version of information would be the most efficient. 
+
 **A minimal, web-native protocol for exposing content changes to AI systems.**
 
 > 🚀 **Current Version:** [v0.1 (Draft)](spec/AICF-v0.1.md)  
